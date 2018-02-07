@@ -124,10 +124,6 @@ namespace Whynot
             IntPtr aaaa = WinGetHandle(WINDOW_NAME);
             const int GWL_STYLE = (-16);
             const int WS_VISIBLE = 0x10000000;
-            SetWindowLong(aaaa, GWL_STYLE, (WS_VISIBLE));
-            Rectangle resolution = Screen.PrimaryScreen.Bounds;
-            MoveWindow(aaaa, resolution.Top, resolution.Left, resolution.Width, resolution.Height, true);
-            ShowWindowAsync(aaaa, 3);
 
             this.TopMost = true;
             this.BackColor = Color.Black;
